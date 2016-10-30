@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:nestedScrollingEnabled="false">
+
+    <TextView
+        android:id="@+id/lvRowEposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-posta"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/lvRowAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Açıklama"
+        android:layout_below="@+id/textViewEposta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tarih/Saat"
+        android:id="@+id/lvRowTarihSaat"
+        android:layout_alignBaseline="@+id/lvRowEposta"
+        android:layout_alignBottom="@+id/lvRowEposta"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="2dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewEposta"
+        android:layout_below="@+id/lvRowEposta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        style="size"
+        android:textSize="11dp"
+        android:textColorHint="#1b591f"
+        android:autoText="false"
+        android:textColor="#1e8b00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewAciklama"
+        android:layout_below="@+id/lvRowAciklama"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:textSize="11dp"
+        android:textColorHint="#3b9423"
+        android:textColor="#1e8b00"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewTarihSaat"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lvRowTarihSaat"
+        android:layout_alignParentRight="true"
+        android:layout_margin="2dp"
+        android:textSize="11dp"
+        android:textColorHint="#23e219"
+        android:textColor="#1e8b00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewKoordinat"
+        android:textSize="11dp"
+        android:textColorHint="#43b736"
+        android:textColor="#1e8b00"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:singleLine="true"
+        android:layout_below="@+id/textViewAciklama"
+        android:layout_toRightOf="@+id/textViewAciklama"
+        android:layout_alignRight="@+id/textViewTarihSaat"
+        android:layout_alignEnd="@+id/textViewTarihSaat" />
+
+
+</RelativeLayout>

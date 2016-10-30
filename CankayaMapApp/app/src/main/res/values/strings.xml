@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Çankaya</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="action_sign_in">GİRİŞ</string>
+    <string name="action_sign_in_short">Giriş</string>
+    <string name="error_invalid_email">Bu e-posta adresi geçersiz.</string>
+    <string name="error_invalid_password">Bu şifre çok kısa.</string>
+    <string name="error_incorrect_password">Bu şifre yanlış.</string>
+    <string name="error_field_required">Bu alan gereklidir.</string>
+    <string name="permission_rationale">"İletişim izinleri e-posta tamamlamaları sağlamak için gereklidir."</string>
+</resources>
