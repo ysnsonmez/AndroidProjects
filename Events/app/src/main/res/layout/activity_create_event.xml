@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/custom_dialog"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="android.application.events.CreateEventActivity"
+        android:weightSum="1"
+    android:theme="@android:style/Theme.DeviceDefault"
+    android:background="@color/cardview_dark_background">
+
+    <TextView
+        android:text="Create an Event..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCreateEvent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="top|center"
+        android:layout_below="@+id/map"
+        android:layout_margin="1dp"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="android.application.events.MainActivity"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_image_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </fragment>
+
+    <TextView
+        android:text="Event Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAdi"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_below="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_margin="1dp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/etAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:windowSoftInputMode="adjustResize|stateHidden"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:layout_below="@+id/tvAdi"
+        android:layout_alignParentStart="true"
+        android:layout_margin="1dp"
+        android:lines="1" />
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_above="@+id/finish_fab"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date and Hour:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:layout_margin="1dp" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT DATE"
+                android:id="@+id/btn_date"
+                android:layout_below="@+id/tvDate"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/in_date"
+                android:textStyle="normal|bold"
+                android:textSize="12sp"
+            android:padding="1dp"
+            android:layout_marginEnd="1dp"
+            android:minHeight="45dp" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT TIME"
+                android:id="@+id/btn_time"
+                android:layout_below="@+id/btn_date"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/btn_date"
+                android:textStyle="normal|bold"
+                android:textSize="12sp"
+                android:padding="1dp"
+                android:layout_marginEnd="1dp"
+                android:minHeight="45dp" />
+
+        <EditText
+            android:layout_width="@dimen/card_image_height"
+            android:layout_height="wrap_content"
+            android:id="@+id/in_date"
+            android:layout_alignTop="@+id/btn_date"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:maxLength="12" />
+
+        <EditText
+            android:layout_width="@dimen/card_image_height"
+            android:layout_height="wrap_content"
+            android:id="@+id/in_time"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:layout_below="@+id/in_date"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvAciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/etAdi"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/etAciklama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:windowSoftInputMode="adjustResize|stateHidden"
+        android:maxLines="3"
+        android:maxLength="30"
+        android:layout_below="@+id/tvAciklama"
+        android:layout_alignParentStart="true"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:id="@+id/tvFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Image:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_margin="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/finish_fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_add_a_photo_black_18dp"
+            android:tint="@color/white"
+            android:layout_weight="0.17"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iw"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/finish_fab"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+</LinearLayout>
