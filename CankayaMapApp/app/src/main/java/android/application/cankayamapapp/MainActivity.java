@@ -85,10 +85,6 @@ public class MainActivity extends AppCompatActivity
         sNavDrawer = (Spinner) hView.findViewById(R.id.sFiltre);
         setsFiltre(sNavDrawer);
 
-/*        final ListView listemiz = (ListView) findViewById(R.id.liste);
-        OzelAdapter adaptorumuz=new OzelAdapter(this, kisiler);
-        listemiz.setAdapter(adaptorumuz);*/
-
         // get array list to records and set listview on nav drawer
         final ArrayList Recordlist = db.getRecordAList();
         elvRecordList = (ExpandableListView) navigationView.findViewById(R.id.explv);
