@@ -219,8 +219,6 @@ public class ExpandListViewAdapter extends BaseExpandableListAdapter implements 
 
                 if (mDataTemp.get("a_onemi").toString().toLowerCase().contains(filterString)) {
 
-                    Log.e("if","if içi");
-
                     mData tmp = new mData(mDataTemp.get("id").toString(),
                             mDataTemp.get("eposta").toString(),
                             mDataTemp.get("aciklama").toString(),
@@ -229,7 +227,7 @@ public class ExpandListViewAdapter extends BaseExpandableListAdapter implements 
                             mDataTemp.get("tarih").toString());
                     nlist.add(tmp);
 
-                    Log.e("tmp",tmp.getA_onemi().toString());
+                    //Log.e("tmp",tmp.getA_onemi().toString());
                 }
             }
 
@@ -259,7 +257,7 @@ public class ExpandListViewAdapter extends BaseExpandableListAdapter implements 
         for (int i = 0; i < arrayList.size(); i++) {
 
             HashMap<String,String> tmp= (HashMap<String, String>) arrayList.get(i);
-//String id,String eposta, String aciklama, String a_onemi, String koordinat, String tarihsaat
+            //String id,String eposta, String aciklama, String a_onemi, String koordinat, String tarihsaat
             mData mDatatemp = new mData(tmp.get("id"),
                     tmp.get("eposta"),
                     tmp.get("aciklama"),
